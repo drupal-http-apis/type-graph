@@ -36,7 +36,7 @@ class ComplexNode extends Node {
    * @return static
    */
   public function addNode($key, $item) {
-    if (!$item instanceof static) {
+    if (!$item instanceof Node) {
       $item = new Node($item);
     }
 
