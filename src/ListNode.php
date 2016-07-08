@@ -32,4 +32,9 @@ class ListNode extends Node {
   public function setValue($value) {
     return new static($value, $this->getItem());
   }
+
+  public function setItem($item) {
+    return new static($this->getValue(), $item);
+  }
+
 }
